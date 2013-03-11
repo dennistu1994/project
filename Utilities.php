@@ -1,16 +1,6 @@
 <?php
 class Utilities
-{
-	public static function Generate50()
-	{
-	
-	}
-	
-	private function RNG()
-	{
-	
-	}
-	
+{	
 	public static function RunPage($filename)
 	{
 		$connection = mysql_connect("localhost","814459_jq2tu","Tjq@132508") or die(mysql_error());
@@ -27,8 +17,13 @@ class Utilities
 	{
 		$connection = mysql_connect("localhost","814459_jq2tu","Tjq@132508") or die(mysql_error());
 		mysql_select_db("rookiecodes_clanteam_project",$connection);
-		$query = 'update PHP set filecontent = "'.$filecontent.'" where "filename = "'.$filename.'" '	
+		$query = 'update PHP set filecontent = "'.$filecontent.'" where "filename = "'.$filename.'"';
 		$qresult = mysql_query($query,$connection) or die(mysql_error());
+	}
+	
+	public static function GetJQuery()
+	{
+		echo '<script type="text/javascript" src="./includes/jquery-1.9.1.min.js"></script>';
 	}
 }
 ?>
