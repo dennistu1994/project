@@ -1,0 +1,13 @@
+database username - 814459_jq2tu
+database password - Tjq@132508
+
+FTP:
+host - rookiecodes.clanteam.com
+username - rookiecodes_clanteam
+password- tjq132508
+port - 21
+
+database list:
+rookiecodes_clanteam_images
+rookiecodes_clanteam_peuler
+*rookiecodes_clanteam_project - Main
